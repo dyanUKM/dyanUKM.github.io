@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Group 5: Mendonia | e-Portfolio</title>
+<style>
+:root{--ink:#0f2e2b;--gold:#a6833f;--soft:#e9dfc8;--bg:#f4f6f5;--line:#dbe2e0;--muted:#5b6b69}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:#1d2b2a;line-height:1.7}
+.wrap{width:min(1080px,92%);margin:auto}
+h1,h2,h3{font-weight:500;line-height:1.2}
+h2{font-size:2rem;margin-bottom:.4rem}
+h2::after{content:"";display:block;width:50px;height:3px;background:var(--gold);margin:.7rem 0 1.8rem}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+nav{position:sticky;top:0;z-index:10;background:var(--ink);padding:.6rem 0}
+nav .wrap{display:flex;flex-wrap:wrap;gap:.2rem 1rem;align-items:center;justify-content:space-between}
+nav strong{color:#fff;font-weight:500}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem}
+nav a{display:block;padding:.35rem .8rem;color:#cfdad8;text-decoration:none;font:500 .9rem system-ui,sans-serif;border-radius:20px}
+nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+
+header{background:var(--ink);color:#fff;padding:4.5rem 0}
+header h1{font-size:clamp(2.4rem,7vw,4.2rem)}
+header .sub{color:var(--soft);margin:.8rem 0 1.2rem}
+header p.intro{max-width:60ch;color:#cfdad8}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:2rem}
+.member{background:#17403c;border-top:3px solid var(--gold);border-radius:10px;padding:1.2rem}
+.member h3{font-size:1.05rem}
+.member p{font:.88rem system-ui,sans-serif;color:#cfdad8;margin-top:.2rem}
+.member b{color:var(--soft)}
+
+section{padding:4rem 0}
+section.alt{background:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+section.alt .card{background:var(--bg)}
+.video{aspect-ratio:16/9;background:var(--ink)}
+.video iframe{width:100%;height:100%;border:0}
+.body{padding:1.2rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.body h3{font-size:1.2rem}
+.body p{font:.92rem/1.6 system-ui,sans-serif;color:var(--muted)}
+.body p.ref{color:#1d2b2a;border-top:1px dashed var(--line);padding-top:.7rem}
+.btn{margin-top:auto;align-self:flex-start;background:var(--ink);color:#fff;text-decoration:none;font:600 .88rem system-ui,sans-serif;padding:.6rem 1.1rem;border-radius:20px}
+.btn:hover{background:var(--gold)}
+.problem{background:var(--ink);color:#e4ecea;border-radius:12px;padding:1.5rem;margin-bottom:1.8rem}
+.problem h3{color:#fff;margin-bottom:.4rem}
+.big{font-size:1.25rem;max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chips span{border:1px solid var(--line);background:#fff;border-radius:20px;padding:.4rem 1rem;font:600 .9rem system-ui,sans-serif}
+ul.res{padding-left:1.2rem}
+
+footer{background:var(--ink);color:#cfdad8;padding:2.2rem 0;font:.9rem/1.7 system-ui,sans-serif}
+footer h2{font:500 1.3rem Georgia,serif;color:#fff;margin:0 0 .5rem}
+footer h2::after{display:none}
+@media(max-width:600px){nav .wrap{justify-content:center}.grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="wrap">
+    <strong>Mendonia</strong>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home">
+  <div class="wrap">
+    <h1>Group 5: Mendonia</h1>
+    <p class="sub">TTTN3133 Secure Programming · Instructor: Nur Hanis Sabrina</p>
+    <p class="intro">[WRITE YOUR INTRO: 2–3 sentences about your group scenario and what you learned.]</p>
+    <div class="team">
+      <div class="member"><h3>Hanis Nabihah binti Mohd Jaini</h3><p>Matric: A220969</p><p><b>Group Leader</b></p><p>[Contribution]</p></div>
+      <div class="member"><h3>Dyan binti Azizol</h3><p>Matric: A216805</p><p><b>Team Member</b></p><p>[Contribution]</p></div>
+      <div class="member"><h3>Nur Amalia Marsya binti Mohd Effandi</h3><p>Matric: A216645</p><p><b>Team Member</b></p><p>[Contribution]</p></div>
+    </div>
+  </div>
+</header>
+
+<section id="labs" class="alt">
+  <div class="wrap">
+    <h2>Labs</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 1 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Lab 1: [Title]</h3><p>[Short description.]</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 2 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Lab 2: [Title]</h3><p>[Short description.]</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 3 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Lab 3: [Title]</h3><p>[Short description.]</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="problem">
+      <h3>Project: [NAME]</h3>
+      <p>[PROBLEM STATEMENT: 1–2 sentences.]</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 1 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 1: Login Test</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 2 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 2: Data 1</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 3 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 3: Data 2</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 4 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 4: SQL Injection</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 5 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 5: Placeholder 1</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 6 video" loading="lazy" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 6: Placeholder 2</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="reflection" class="alt">
+  <div class="wrap">
+    <h2>Reflection &amp; Learning Journey</h2>
+    <p class="big">[REFLECTION: 3–4 sentences about what your group learned and the challenges you faced.]</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills &amp; Tech Stack</h2>
+    <div class="chips">
+      <span>SQL Injection</span><span>Secure Coding</span><span>Authentication</span><span>Input Validation</span><span>Python</span><span>SQL</span><span>GitHub</span>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="alt">
+  <div class="wrap">
+    <h2>Resources</h2>
+    <ul class="res">
+      <li>[API / Library 1]</li>
+      <li>[API / Library 2]</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Group 5: Mendonia</h2>
+    <p>Hanis Nabihah binti Mohd Jaini (A220969) · Dyan binti Azizol (A216805) · Nur Amalia Marsya binti Mohd Effandi (A216645)</p>
+    <p>&copy; 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
