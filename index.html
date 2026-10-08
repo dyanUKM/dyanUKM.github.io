@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Group 5: Mendonia | e-Portfolio</title>
+<style>
+:root{
+  --primary:#94d2bd;   
+  --accent:#ee9b00;    
+  --highlight:#ffd166; 
+  --light:#fefae0;     
+  --text:#4a4a3f;      
+  --card:#ffffff;
+  --muted:#5c5c4a;    
+  --mono:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+
+
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--mono);background:var(--light);color:var(--text);line-height:1.7}
+.wrap{width:min(1080px,92%);margin:auto}
+h1,h2,h3{font-family:"Merriweather", Georgia, serif;font-weight:1000;line-height:1.3}
+h2{font-size:2rem;margin-bottom:.4rem;color:var(--primary)}
+h2::after{content:"";display:block;width:60px;height:3px;background:var(--highlight);margin:.7rem 0 1.8rem}
+
+nav{position:sticky;top:0;z-index:10;background:var(--primary);padding:.8rem 0}
+nav .wrap{display:flex;flex-wrap:wrap;gap:.2rem 1rem;align-items:center;justify-content:space-between}
+nav strong{color:#fff;font:600 1rem var(--mono)}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.2rem}
+nav a{display:block;padding:.4rem .9rem;color:#fff;text-decoration:none;font:500 .9rem var(--mono);border-radius:6px;transition:.3s}
+nav a:hover{background:var(--highlight);color:#000}
+
+header{background:linear-gradient(135deg,var(--primary),#0f172a);color:#fff;padding:5rem 0 4.5rem;text-align:center}
+header h1{font-size:clamp(2.2rem,6vw,3.6rem)}
+header .sub{letter-spacing:.01em;font-size:1rem;color:var(--highlight);margin:.8rem 0 1.2rem}
+header p.intro{max-width:65ch;margin:auto;color:#e5e7eb}
+
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2.5rem}
+.member{background:var(--card);border:1px solid #e5e7eb;border-radius:12px;padding:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
+.photo{width:96px;height:96px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 1rem}
+.member h3 b{color:var(--highlight);font-size:0.95rem;font-weight:700} /* nama lebih kecil */
+.member p{font:.85rem var(--mono);color:var(--muted);margin-top:.3rem}
+.member b{color:var(--primary)}
+
+.member.leader{
+  background:#fffbea; 
+  border:2px solid var(--highlight);
+  box-shadow:0 6px 16px rgba(0,0,0,.12);
+}
+.member.leader h3 b{color:#b45309;font-size:1rem} 
+.member.leader p{color:#78350f}
+
+section{padding:4rem 0}
+section.alt{background:#f9fafb;border-block:1px solid #e5e7eb}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+.card{background:var(--card);border:1px solid #e5e7eb;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column}
+.video{aspect-ratio:16/9;background:#d1d5db}
+.video iframe{width:100%;height:100%;border:0}
+.body{padding:1.2rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.body h3{font-size:1.2rem;color:var(--primary)}
+.body p{font:.92rem/1.6 var(--mono);color:var(--muted)}
+.body p.ref{color:var(--text);border-top:1px dashed #e5e7eb;padding-top:.7rem}
+.btn{margin-top:auto;align-self:flex-start;background:var(--highlight);color:#000;text-decoration:none;font:600 .88rem var(--mono);padding:.6rem 1.1rem;border-radius:6px;transition:.3s}
+.btn:hover{background:#ca8a04;color:#fff}
+
+.problem{background:#fff7ed;color:var(--text);border-radius:12px;padding:1.5rem;margin-bottom:1.8rem;border-left:4px solid var(--highlight)}
+.problem h3{color:var(--primary);margin-bottom:.4rem}
+.big{font-size:1.1rem;max-width:65ch;color:var(--muted)}
+
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chips span{border:1px solid #e5e7eb;background:#f3f4f6;border-radius:20px;padding:.4rem 1rem;font:600 .9rem var(--mono);color:var(--primary)}
+
+ul.res{padding-left:1.2rem;color:var(--muted)}
+
+footer{text-align:center;background:var(--primary);color:#fff;padding:2rem 0;font:.9rem/1.7 var(--mono)}
+footer h2{font:500 1.3rem Georgia,serif;color:#fff;margin:0 0 .5rem}
+footer h2::after,footer h2::before{display:none}
+
+@media(max-width:600px){nav .wrap{justify-content:center}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="wrap">
+    <strong>TTTN3133 ePortfolio</strong>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#labs">Labs</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home">
+  <div class="wrap">
+    <h1>TTTN3133 Secure Programming</h1>
+    <p class="sub">Group 5: Mendonia · Instructor: Nur Hanis Sabrina</p>
+    <p class="intro">Secure coding is the practice of designing code that protects software and user data from vulnerabilities. It is guided by the CIA Triad and frameworks such as OWASP Top 10 and Secure SDLC.</p>
+    <div class="team">
+       <div class="member"><img class="photo" src="dyan.png" alt="Photo of Dyan"><h3><b>Dyan binti Azizol</b></h3><p>Matric: A216805</p><p><b>Team Member</b></p><p>Developed the code and fixed errors during implementation.</p></div>
+      <div class="member leader"><img class="photo" src="hanis.png" alt="Photo of Hanis Nabihah"><h3><b>Hanis Nabihah binti Mohd Jaini</b></h3><p>Matric: A220969</p><p><b>Group Leader</b></p><p>Led the group, assigned tasks and coordinated progress.</p></div>
+      <div class="member"><img class="photo" src="marsya.png" alt="Photo of Nur Amalia Marsya"><h3><b>Nur Amalia Marsya binti Mohd Effandi</b></h3><p>Matric: A216645</p><p><b>Team Member</b></p><p>Tested the application and reported issues.</p></div>
+    </div>
+  </div>
+</header>
+
+<!-- Labs, Projects, Reflection, Skills, Resources, Footer sama seperti versi sebelum -->
+</body>
+</html>
+<section id="labs" class="alt">
+  <div class="wrap">
+    <h2>Labs</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 1 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Lab 1: [Title]</h3><p>[Short description.]</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 2 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Lab 2: [Title]</h3><p>[Short description.]</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 3 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Lab 3: [Title]</h3><p>[Short description.]</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="head">
+      <h2>Projects</h2>
+      <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-MAIN-REPO" target="_blank" rel="noopener">Main Repository on GitHub</a>
+    </div>
+    <div class="problem">
+      <h3>Project: [NAME]</h3>
+      <p>[PROBLEM STATEMENT: 1–2 sentences.]</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 1 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 1: Login Test</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 2 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 2: Data 1</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 3 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 3: Data 2</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">View on GitHub</a></div>
+      </article>
+      <article class="card">
+        <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 4 video" allowfullscreen></iframe></div>
+        <div class="body"><h3>Case 4: SQL Injection</h3><p>Live code vulnerability implementation.</p><p class="ref"><b>Reflection:</b> [2–3 sentences.]</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">View on GitHub</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="reflection" class="alt">
+  <div class="wrap">
+    <h2>Reflection & Learning Journey</h2>
+    <p class="big">Secure coding is different from defensive programming, because it prepares for deliberate attacks and not only for user mistakes. Mapping vulnerabilities to the CIA Triad helps explain why each flaw matters and how to prevent it. Security should also start early, since fixing a flaw after release costs far more than preventing it during design and coding.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills & Tech Stack</h2>
+    <div class="chips">
+      <span>Python</span><span>C Programming</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Laravel</span><span>Firebase</span><span>REST API</span>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="alt">
+  <div class="wrap">
+    <h2>Resources</h2>
+    <ul class="res">
+      <li>Firebase (Authentication & Database)</li>
+      <li>Node.js (Backend runtime)</li>
+      <li>OWASP Top 10 Guidelines (Security reference)</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Dyan binti Azizol · A216805 · &copy; 2026</p>
+  </div>
+</footer>
